@@ -1,4 +1,4 @@
-# cicd_single
+# ci/cd: ví dụ đơn giản
 
 ### Vào github -> actions
 Tạo 1 workflows
@@ -81,3 +81,8 @@ test/phpunit.xml
           memory_limit: 256M
           # args: --coverage-text
 ```
+
+### Phần CD
+Step 1: Generate an SSH Key
+Link: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
