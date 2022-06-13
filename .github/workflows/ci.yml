@@ -23,11 +23,11 @@ jobs:
         - uses: actions/checkout@v2
         run: echo start deploy!
         # - name: rsync deployments
-          # uses: burnett01/rsync-deployments@5.2
-          # with:
-            # switches: -avzr --delete
-            # path: src/
-            # remote_path: /var/www/html/
-            # remote_host: example.com
-            # remote_user: debian
-            # remote_key: ${{ secrets.DEPLOY_KEY }}
+        # uses: burnett01/rsync-deployments@5.2
+        # with:
+        # switches: -avzr --delete
+        # path: src/
+        # remote_path: /var/www/html/
+        # remote_host: example.com
+        # remote_user: debian
+        # remote_key: ${{ secrets.DEPLOY_KEY }}
