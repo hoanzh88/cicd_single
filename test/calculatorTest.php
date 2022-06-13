@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/calculator.php";
+require __DIR__ . "/../calculator.php";
 
 class CalculatorTest extends \PHPUnit\Framework\TestCase{
     public function testadd(){
