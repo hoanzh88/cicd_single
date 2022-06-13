@@ -67,3 +67,17 @@ test/phpunit.xml
   </testsuites>
 </phpunit>
 ```
+
+### Add git action workflows
+
+```
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        # env:
+          # TEST_NAME: HoanChuong
+        with:
+          # bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          memory_limit: 256M
+          # args: --coverage-text
+```
