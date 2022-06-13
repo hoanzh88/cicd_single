@@ -82,7 +82,9 @@ test/phpunit.xml
           # args: --coverage-text
 ```
 
-### Phần CD
-Step 1: Generate an SSH Key
-Link: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+### Deploying to a server via SSH and Rsync in a Github Action
+Xem link: https://github.com/marketplace/actions/rsync-deployments-action
+
+
+
 

@@ -11,22 +11,23 @@ jobs:
         run: echo Hello World!
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
-        # env:
-          # TEST_NAME: HoanChuong
+        env:
+          TEST_NAME: HoanChuong
         with:
-          # bootstrap: vendor/autoload.php
           configuration: test/phpunit.xml
           memory_limit: 256M
-          # args: --coverage-text
+
   deploy:
         runs-on: ubuntu-latest
-        needs: build
-        environment:
-          name: 'Development'
-          url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
         steps:
-          - name: Download artifact from build job
-            uses: actions/download-artifact@v3
-            with:
-              name: php-app
+        - uses: actions/checkout@v2
+        run: echo start deploy!
+        # - name: rsync deployments
+          # uses: burnett01/rsync-deployments@5.2
+          # with:
+            # switches: -avzr --delete
+            # path: src/
+            # remote_path: /var/www/html/
+            # remote_host: example.com
+            # remote_user: debian
+            # remote_key: ${{ secrets.DEPLOY_KEY }}
