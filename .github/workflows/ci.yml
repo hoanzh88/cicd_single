@@ -1,0 +1,11 @@
+name: ci
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Report PHP version
+        run: php -v
+      - name: Run a other script
+        run: echo Hello World!
