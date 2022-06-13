@@ -18,16 +18,16 @@ jobs:
           memory_limit: 256M
 
   deploy:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        run: echo start deploy!
-        # - name: rsync deployments
-        # uses: burnett01/rsync-deployments@5.2
-        # with:
-        # switches: -avzr --delete
-        # path: src/
-        # remote_path: /var/www/html/
-        # remote_host: example.com
-        # remote_user: debian
-        # remote_key: ${{ secrets.DEPLOY_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    run: echo start deploy!
+    # - name: rsync deployments
+    # uses: burnett01/rsync-deployments@5.2
+    # with:
+    # switches: -avzr --delete
+    # path: src/
+    # remote_path: /var/www/html/
+    # remote_host: example.com
+    # remote_user: debian
+    # remote_key: ${{ secrets.DEPLOY_KEY }}
